@@ -1,0 +1,184 @@
+{
+ "Accordion": [
+  "accordion"
+ ],
+ "Alert": [
+  "alert"
+ ],
+ "Alert Dialog": [
+  "alert-dialog"
+ ],
+ "Aspect Ratio": [
+  "aspect-ratio"
+ ],
+ "Attachment": [
+  "attachment"
+ ],
+ "Avatar": [
+  "avatar"
+ ],
+ "Badge": [
+  "badge"
+ ],
+ "Breadcrumb": [
+  "breadcrumb"
+ ],
+ "Bubble": [
+  "bubble"
+ ],
+ "Button": [
+  "button",
+  "icon-button"
+ ],
+ "Button Group": [
+  "button-group"
+ ],
+ "Calendar": [
+  "calendar"
+ ],
+ "Card": [
+  "card"
+ ],
+ "Carousel": [
+  "carousel"
+ ],
+ "Chart": [
+  "chart"
+ ],
+ "Checkbox": [
+  "checkbox"
+ ],
+ "Collapsible": [
+  "collapsible"
+ ],
+ "Combobox": [
+  "combobox"
+ ],
+ "Command": [
+  "command"
+ ],
+ "Contex Menu": [
+  "context-menu"
+ ],
+ "Data Table": [
+  "data-table"
+ ],
+ "Date Picker": [
+  "date-picker"
+ ],
+ "Dialog": [
+  "dialog"
+ ],
+ "Drawer": [
+  "drawer"
+ ],
+ "Dropdown Menu": [
+  "dropdown-menu"
+ ],
+ "Empty": [
+  "empty"
+ ],
+ "Field": [
+  "field"
+ ],
+ "Hover Card": [
+  "hover-card"
+ ],
+ "Input": [
+  "input"
+ ],
+ "Input Group": [
+  "input-group"
+ ],
+ "Input OPT": [
+  "input-otp"
+ ],
+ "Item": [
+  "item"
+ ],
+ "Kbd": [
+  "kbd"
+ ],
+ "Label": [
+  "label"
+ ],
+ "Marker": [
+  "marker"
+ ],
+ "Menubar": [
+  "menubar"
+ ],
+ "Message": [
+  "message"
+ ],
+ "Message Scroller": [
+  "message-scroller"
+ ],
+ "Native Select": [
+  "native-select"
+ ],
+ "Navigation Menu": [
+  "navigation-menu"
+ ],
+ "Pagination": [
+  "pagination"
+ ],
+ "Popover": [
+  "popover"
+ ],
+ "Progress": [
+  "progress"
+ ],
+ "Questionnaire": [
+  "questionnaire"
+ ],
+ "Radio Group": [
+  "radio-group"
+ ],
+ "Scroll-area": [
+  "scroll-area"
+ ],
+ "Select": [
+  "select"
+ ],
+ "Seperator": [
+  "separator"
+ ],
+ "Sheet": [
+  "sheet"
+ ],
+ "Sidebar": [
+  "sidebar"
+ ],
+ "Skeleton": [
+  "skeleton"
+ ],
+ "Slider": [
+  "slider"
+ ],
+ "Spinner": [
+  "spinner"
+ ],
+ "Switch": [
+  "switch"
+ ],
+ "Table": [
+  "table"
+ ],
+ "Tabs": [
+  "tabs"
+ ],
+ "Textarea": [
+  "textarea"
+ ],
+ "Toast": [
+  "sonner"
+ ],
+ "Toggle & Toggle Group": [
+  "toggle",
+  "toggle-group"
+ ],
+ "Tooltip": [
+  "tooltip"
+ ]
+}

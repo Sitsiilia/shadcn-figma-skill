@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lib-focus",
+  "type": "registry:lib",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "lib/focus.ts",
+      "content": "/**\n * Shared interaction recipes.\n *\n * The library draws focus as a 3px drop-shadow (`Box Shadow/Focus ring`,\n * neutral-400 @ 50%) plus a `ring`-coloured 1px border — not an offset outline.\n * Invalid controls swap in `Box Shadow/Destructive` (red @ 20%).\n */\nexport const focusRing =\n  \"outline-none focus-visible:border-ring focus-visible:ring-ring-subtle focus-visible:ring-[3px]\";\n\nexport const invalidRing =\n  \"aria-invalid:border-destructive aria-invalid:ring-ring-destructive aria-invalid:ring-[3px]\";\n\n/** Every interactive component dims to 50% when disabled. */\nexport const disabled = \"disabled:pointer-events-none disabled:opacity-50\";\n\n/** Icons inside controls are 16px with a 2px stroke and never shrink. */\nexport const controlIcon =\n  \"[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4\";\n\n/**\n * Icon placement inside Button, Badge and their content slots.\n *\n * Docs: \"Remember to add the data-icon='inline-start' or data-icon='inline-end'\n * attribute to the icon for the correct spacing.\"\n *\n * The attribute tightens the optical gap on the outer edge so a leading or\n * trailing glyph sits closer to the box edge than the label does.\n */\nexport const inlineIcon =\n  \"[&_[data-icon=inline-start]]:-ms-0.5 [&_[data-icon=inline-end]]:-me-0.5\";\n",
+      "type": "registry:lib",
+      "target": "lib/focus.ts"
+    }
+  ]
+}

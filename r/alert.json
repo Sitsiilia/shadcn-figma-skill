@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert",
+  "type": "registry:ui",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/alert.tsx",
+      "content": "import * as React from \"react\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Alert — State = Default | Destructive, Dir = LTR | RTL.\n * Box: px 10, py 8, gap 8, radius-lg, 1px border on `card`.\n *\n * Note the destructive alert keeps the neutral card surface and recolours the\n * text only — it does not tint the background. Tinted alerts in the file\n * (the \"Custom Colors\" example) are built by passing Tailwind palette classes,\n * e.g. `className=\"bg-amber-50 border-amber-200 text-amber-900\"`.\n */\nconst alertVariants = cva(\n  cn(\n    \"relative grid w-full items-start gap-y-0.5 rounded-lg border bg-card px-2.5 py-2 text-sm\",\n    \"has-[>svg]:grid-cols-[auto_1fr] has-[>svg]:gap-x-2.5 grid-cols-[1fr]\",\n    \"[&>svg]:size-4 [&>svg]:translate-y-0.5 [&>svg]:text-current\"\n  ),\n  {\n    variants: {\n      variant: {\n        default: \"text-card-foreground\",\n        destructive: \"text-text-destructive [&>[data-slot=alert-description]]:text-text-destructive/85\",\n      },\n    },\n    defaultVariants: { variant: \"default\" },\n  }\n);\n\nfunction Alert({\n  className,\n  variant,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof alertVariants>) {\n  return (\n    <div\n      data-slot=\"alert\"\n      role=\"alert\"\n      className={cn(alertVariants({ variant }), className)}\n      {...props}\n    />\n  );\n}\n\nfunction AlertTitle({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"alert-title\"\n      className={cn(\n        \"col-start-2 line-clamp-1 min-h-4 font-medium tracking-tight\",\n        \"[&:only-child]:col-start-auto\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction AlertDescription({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"alert-description\"\n      className={cn(\n        \"col-start-2 grid justify-items-start gap-1 text-sm font-light text-muted-foreground\",\n        \"[&_p]:leading-relaxed\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\n/** figma: the Alert page's \"Action\" example — a trailing button slot. */\nfunction AlertAction({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"alert-action\"\n      className={cn(\"col-start-3 row-span-2 row-start-1 self-center ps-2.5\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Alert, AlertTitle, AlertDescription, AlertAction, alertVariants };\n",
+      "type": "registry:ui",
+      "target": "components/ui/alert.tsx"
+    }
+  ]
+}

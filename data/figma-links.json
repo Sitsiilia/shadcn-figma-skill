@@ -1,0 +1,446 @@
+{
+ "community": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+ "plugin": "https://www.figma.com/community/plugin/1582277338374276192/shadcn-ui-create",
+ "support": "https://ko-fi.com/sitsiilia",
+ "fileKey": null,
+ "pages": {
+  "About the libarary": {
+   "page": "About the libarary",
+   "nodeId": "668:335",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "shadcn/ui create plugin": {
+   "page": "shadcn/ui create plugin",
+   "nodeId": "1425:29330",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Components": {
+   "page": "Components",
+   "nodeId": "2429:383",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Accordion": {
+   "page": "Accordion",
+   "nodeId": "1688:186",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Alert": {
+   "page": "Alert",
+   "nodeId": "1759:1726",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Alert Dialog": {
+   "page": "Alert Dialog",
+   "nodeId": "1827:3908",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Aspect Ratio": {
+   "page": "Aspect Ratio",
+   "nodeId": "1862:812",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Attachment": {
+   "page": "Attachment",
+   "nodeId": "2374:292",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Avatar": {
+   "page": "Avatar",
+   "nodeId": "1863:251",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Badge": {
+   "page": "Badge",
+   "nodeId": "1867:919",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Breadcrumb": {
+   "page": "Breadcrumb",
+   "nodeId": "1870:186",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Bubble": {
+   "page": "Bubble",
+   "nodeId": "2377:442",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Button": {
+   "page": "Button",
+   "nodeId": "1879:1158",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Button Group": {
+   "page": "Button Group",
+   "nodeId": "1881:1030",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Calendar": {
+   "page": "Calendar",
+   "nodeId": "1891:4154",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Card": {
+   "page": "Card",
+   "nodeId": "1932:1658",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Carousel": {
+   "page": "Carousel",
+   "nodeId": "1932:4265",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Chart": {
+   "page": "Chart",
+   "nodeId": "1937:478",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Checkbox": {
+   "page": "Checkbox",
+   "nodeId": "1937:1963",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Collapsible": {
+   "page": "Collapsible",
+   "nodeId": "1947:1199",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Combobox": {
+   "page": "Combobox",
+   "nodeId": "1954:2619",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Command": {
+   "page": "Command",
+   "nodeId": "1965:2406",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Contex Menu": {
+   "page": "Contex Menu",
+   "nodeId": "2125:1383",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Data Table": {
+   "page": "Data Table",
+   "nodeId": "2131:401",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Date Picker": {
+   "page": "Date Picker",
+   "nodeId": "2132:2615",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Dialog": {
+   "page": "Dialog",
+   "nodeId": "2136:6712",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Drawer": {
+   "page": "Drawer",
+   "nodeId": "2138:1331",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Dropdown Menu": {
+   "page": "Dropdown Menu",
+   "nodeId": "2140:2960",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Empty": {
+   "page": "Empty",
+   "nodeId": "2146:952",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Field": {
+   "page": "Field",
+   "nodeId": "2075:1077",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Hover Card": {
+   "page": "Hover Card",
+   "nodeId": "2156:377",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Input": {
+   "page": "Input",
+   "nodeId": "1926:2106",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Input Group": {
+   "page": "Input Group",
+   "nodeId": "1973:1392",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Input OPT": {
+   "page": "Input OPT",
+   "nodeId": "2160:7672",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Item": {
+   "page": "Item",
+   "nodeId": "2118:8952",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Kbd": {
+   "page": "Kbd",
+   "nodeId": "1986:1374",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Label": {
+   "page": "Label",
+   "nodeId": "2084:955",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Marker": {
+   "page": "Marker",
+   "nodeId": "2388:2621",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Menubar": {
+   "page": "Menubar",
+   "nodeId": "2162:770",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Message": {
+   "page": "Message",
+   "nodeId": "2393:703",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Message Scroller": {
+   "page": "Message Scroller",
+   "nodeId": "2395:2323",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Native Select": {
+   "page": "Native Select",
+   "nodeId": "2170:2824",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Navigation Menu": {
+   "page": "Navigation Menu",
+   "nodeId": "2111:6686",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Pagination": {
+   "page": "Pagination",
+   "nodeId": "2073:1613",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Popover": {
+   "page": "Popover",
+   "nodeId": "2075:266",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Progress": {
+   "page": "Progress",
+   "nodeId": "2066:2335",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Questionnaire": {
+   "page": "Questionnaire",
+   "nodeId": "2484:78",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Radio Group": {
+   "page": "Radio Group",
+   "nodeId": "2063:228",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Scroll-area": {
+   "page": "Scroll-area",
+   "nodeId": "2067:345",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Select": {
+   "page": "Select",
+   "nodeId": "2058:943",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Seperator": {
+   "page": "Seperator",
+   "nodeId": "2056:1085",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Sheet": {
+   "page": "Sheet",
+   "nodeId": "2052:221",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Sidebar": {
+   "page": "Sidebar",
+   "nodeId": "1092:355",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Skeleton": {
+   "page": "Skeleton",
+   "nodeId": "2015:946",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Slider": {
+   "page": "Slider",
+   "nodeId": "2013:313",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Spinner": {
+   "page": "Spinner",
+   "nodeId": "2008:146",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Switch": {
+   "page": "Switch",
+   "nodeId": "2004:1641",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Table": {
+   "page": "Table",
+   "nodeId": "1945:3787",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Tabs": {
+   "page": "Tabs",
+   "nodeId": "1999:1396",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Textarea": {
+   "page": "Textarea",
+   "nodeId": "1980:1236",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Toast": {
+   "page": "Toast",
+   "nodeId": "2011:2382",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Toggle & Toggle Group": {
+   "page": "Toggle & Toggle Group",
+   "nodeId": "1988:2134",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Tooltip": {
+   "page": "Tooltip",
+   "nodeId": "869:1301",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Examples": {
+   "page": "Examples",
+   "nodeId": "1185:1252",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Featured": {
+   "page": "Featured",
+   "nodeId": "1088:8221",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Login": {
+   "page": "Login",
+   "nodeId": "1097:2023",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Signup": {
+   "page": "Signup",
+   "nodeId": "1196:1300",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Area": {
+   "page": "Area",
+   "nodeId": "260:3742",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Bar": {
+   "page": "Bar",
+   "nodeId": "846:33161",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Line": {
+   "page": "Line",
+   "nodeId": "859:3434",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Pie": {
+   "page": "Pie",
+   "nodeId": "859:5251",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Radar": {
+   "page": "Radar",
+   "nodeId": "867:9838",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  },
+  "Radial": {
+   "page": "Radial",
+   "nodeId": "867:10759",
+   "url": "https://www.figma.com/community/file/1342715840824755935/shadcn-ui-components-with-variables-tailwind-classes-updated-august-2026",
+   "exact": false
+  }
+ }
+}

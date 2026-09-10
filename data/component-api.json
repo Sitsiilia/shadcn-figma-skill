@@ -1,0 +1,1538 @@
+{
+ "sets": {
+  "X": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "State": [
+     "Default"
+    ]
+   }
+  },
+  "Linkedn": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "State": [
+     "Default"
+    ]
+   }
+  },
+  "Social Icons": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Platform": [
+     "LinkedIn"
+    ],
+    "Color": [
+     "Original"
+    ]
+   }
+  },
+  "AccordionTrigger": {
+   "page": "Accordion",
+   "desc": "",
+   "count": 8,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "AccordionContent": {
+   "page": "Accordion",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "AccordionItem": {
+   "page": "Accordion",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "Data State": [
+     "Closed",
+     "Open"
+    ]
+   }
+  },
+  "Card header": {
+   "page": "Card",
+   "desc": "",
+   "count": 5,
+   "props": {
+    "Type": [
+     "Badge",
+     "Button",
+     "Image"
+    ],
+    "Dir": [
+     "LTR",
+     "None",
+     "RTL"
+    ]
+   }
+  },
+  "Button": {
+   "page": "Button",
+   "desc": "",
+   "count": 192,
+   "props": {
+    "Variant": [
+     "Default",
+     "Destructive",
+     "Ghost",
+     "Link",
+     "Outline",
+     "Secondary"
+    ],
+    "Size": [
+     "default",
+     "lg",
+     "sm",
+     "xs"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ],
+    "Roudness": [
+     "Default",
+     "Rounded"
+    ]
+   }
+  },
+  "Alert": {
+   "page": "Alert",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "State": [
+     "Default",
+     "Destructive"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "AlertDialogHeader": {
+   "page": "Alert Dialog",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Dir": [
+     "LTR",
+     "None",
+     "RTL"
+    ]
+   }
+  },
+  "Alertdialogfooter": {
+   "page": "Alert Dialog",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Dir": [
+     "LTR",
+     "None",
+     "RTL"
+    ]
+   }
+  },
+  "Attachment Media": {
+   "page": "Attachment",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "Size": [
+     "Large",
+     "Medium",
+     "Small"
+    ],
+    "State": [
+     "Default",
+     "Destructive"
+    ]
+   }
+  },
+  "Attachment": {
+   "page": "Attachment",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "Data orientation": [
+     "Horizontal",
+     "Vertical"
+    ]
+   }
+  },
+  "Icon Button": {
+   "page": "Button",
+   "desc": "",
+   "count": 160,
+   "props": {
+    "Variant": [
+     "Default",
+     "Destructive",
+     "Ghost",
+     "Outline",
+     "Secondary"
+    ],
+    "Size": [
+     "default",
+     "lg",
+     "sm",
+     "xs"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focused",
+     "Hover"
+    ],
+    "Roundness": [
+     "Default",
+     "Rounded"
+    ]
+   }
+  },
+  "AvatarBadge": {
+   "page": "Avatar",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "Type": [
+     "Icon",
+     "Status"
+    ],
+    "Size": [
+     "default",
+     "lg",
+     "xs"
+    ]
+   }
+  },
+  "Avatar": {
+   "page": null,
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Size": [
+     "default",
+     "lg"
+    ],
+    "Type": [
+     "Avatar badge"
+    ],
+    "Dir": [
+     "LTR"
+    ]
+   }
+  },
+  "AvatarGroup": {
+   "page": "Avatar",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Dropdown": {
+   "page": "Dropdown Menu",
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Type": [
+     "Default"
+    ]
+   }
+  },
+  "MenuItem": {
+   "page": "Dropdown Menu",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Seperator": {
+   "page": "Seperator",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Direction": [
+     "Horizontal",
+     "Vertical"
+    ]
+   }
+  },
+  "Badge": {
+   "page": "Badge",
+   "desc": "",
+   "count": 5,
+   "props": {
+    "State": [
+     "Default",
+     "Destructive",
+     "Ghost",
+     "Outline",
+     "Secondary"
+    ]
+   }
+  },
+  "BreadcrumbItem": {
+   "page": "Breadcrumb",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "State": [
+     "Default",
+     "Hover/Active"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Breadcrumb separator": {
+   "page": "Breadcrumb",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Type": [
+     "chevron-right",
+     "dot"
+    ]
+   }
+  },
+  "Bubble": {
+   "page": "Bubble",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Destructive",
+     "Muted",
+     "Outline",
+     "Primary",
+     "Secondary",
+     "Tinted"
+    ]
+   }
+  },
+  "Tooltip": {
+   "page": "Tooltip",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Placement": [
+     "Bottom",
+     "Left",
+     "Right",
+     "Top"
+    ]
+   }
+  },
+  "PopoverHeader": {
+   "page": "Popover",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "ButtonGroupButton": {
+   "page": "Button Group",
+   "desc": "",
+   "count": 144,
+   "props": {
+    "Variant": [
+     "Ghost",
+     "Outline",
+     "Secondary"
+    ],
+    "Size": [
+     "default",
+     "large",
+     "sm"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ],
+    "Position": [
+     "Left",
+     "Middle",
+     "Right",
+     "Single"
+    ],
+    "Roundness": [
+     "Default",
+     "Rounded"
+    ]
+   }
+  },
+  "ButtonGroupIconButton": {
+   "page": "Button Group",
+   "desc": "",
+   "count": 168,
+   "props": {
+    "Variant": [
+     "Ghost",
+     "Outline",
+     "Secondary"
+    ],
+    "Size": [
+     "default",
+     "large",
+     "sm"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ],
+    "Position": [
+     "Bottom",
+     "Left",
+     "Right",
+     "Single",
+     "Top"
+    ],
+    "Roundness": [
+     "Default",
+     "Rounded"
+    ]
+   }
+  },
+  "InputGroup": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "State": [
+     "Default"
+    ],
+    "Dir": [
+     "LTR"
+    ]
+   }
+  },
+  "InputGroupAddon": {
+   "page": "Input Group",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "ComboboxChip": {
+   "page": "Combobox",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "State": [
+     "Default",
+     "Disabled"
+    ]
+   }
+  },
+  "InputGroupControl": {
+   "page": "Input Group",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Input": {
+   "page": "Input",
+   "desc": "",
+   "count": 32,
+   "props": {
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled",
+     "Focus/Active"
+    ],
+    "Text": [
+     "Active",
+     "Placeholder"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "Roudness": [
+     "Default",
+     "Rounded"
+    ]
+   }
+  },
+  "SelectValue": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Dir": [
+     "LTR"
+    ]
+   }
+  },
+  "Textarea": {
+   "page": null,
+   "desc": "",
+   "count": 2,
+   "props": {
+    "State": [
+     "Placeholder"
+    ],
+    "Text alignment": [
+     "Left",
+     "Right"
+    ]
+   }
+  },
+  "FieldDescription": {
+   "page": "Input",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Alignment": [
+     "Left",
+     "Right"
+    ]
+   }
+  },
+  "Calendar header": {
+   "page": "Calendar",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "Type": [
+     "Month",
+     "MonthYear",
+     "Year"
+    ]
+   }
+  },
+  "Date": {
+   "page": "Calendar",
+   "desc": "",
+   "count": 72,
+   "props": {
+    "State": [
+     "Booked",
+     "Default",
+     "Disabled",
+     "Focused",
+     "Hover/Current",
+     "Selected"
+    ],
+    "Position": [
+     "Left",
+     "Middle",
+     "Right",
+     "Single"
+    ],
+    "Size": [
+     "default",
+     "lg",
+     "sm"
+    ]
+   }
+  },
+  "FieldLabel": {
+   "page": "Input",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Card": {
+   "page": "Carousel",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Layout": [
+     "Horizontal",
+     "Vertical"
+    ]
+   }
+  },
+  "Checkbox": {
+   "page": "Checkbox",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Invalid"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Table head": {
+   "page": "Table",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "State": [
+     "Default",
+     "Hover"
+    ]
+   }
+  },
+  "Table cell": {
+   "page": "Table",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "State": [
+     "Default",
+     "Hover"
+    ]
+   }
+  },
+  "Collapsible": {
+   "page": "Collapsible",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "CollapsibleContent": {
+   "page": "Collapsible",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ],
+    "Variant": [
+     "Key-value",
+     "Title-description"
+    ]
+   }
+  },
+  "Tab": {
+   "page": "Tabs",
+   "desc": "",
+   "count": 32,
+   "props": {
+    "Variant": [
+     "Default",
+     "Underline"
+    ],
+    "Selected": [
+     "Off",
+     "On"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "ComboboxLabel": {
+   "page": "Combobox",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "ComboboxItem": {
+   "page": "Combobox",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "ComboboxList": {
+   "page": "Combobox",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Type": [
+     "Default",
+     "Label",
+     "Search",
+     "Seperator"
+    ]
+   }
+  },
+  "CommandItem": {
+   "page": "Command",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "State": [
+     "Default",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "CMDKGroupHeading": {
+   "page": "Command",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Menuitem": {
+   "page": "Contex Menu",
+   "desc": "",
+   "count": 12,
+   "props": {
+    "Variant": [
+     "Default",
+     "Hover"
+    ],
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Context-menu-label": {
+   "page": "Contex Menu",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Field": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Type": [
+     "Input"
+    ]
+   }
+  },
+  "Dialog header": {
+   "page": "Dialog",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "DialogFooter": {
+   "page": "Dialog",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "DrawerHeader": {
+   "page": "Drawer",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Dir": [
+     "LTR",
+     "None",
+     "RTL"
+    ]
+   }
+  },
+  "DropdownMenuLabel": {
+   "page": "Dropdown Menu",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "SliderTrack": {
+   "page": "Slider",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Orientation": [
+     "Horizontal",
+     "Vertical"
+    ]
+   }
+  },
+  "SliderRange": {
+   "page": "Slider",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Orientation": [
+     "Horizontal",
+     "Vertical"
+    ]
+   }
+  },
+  "SliderThumb": {
+   "page": "Slider",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "State": [
+     "Default",
+     "Hover/Focus"
+    ]
+   }
+  },
+  "RadioGroup": {
+   "page": "Radio Group",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Invalid"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Radio": {
+   "page": "Radio Group",
+   "desc": "",
+   "count": 10,
+   "props": {
+    "Interaction": [
+     "Default",
+     "Disabled",
+     "Error",
+     "Error disabled",
+     "Focus"
+    ],
+    "Data state": [
+     "Checked",
+     "Invalid-checked",
+     "Invalid-unchecked",
+     "Unchecked"
+    ]
+   }
+  },
+  "Switch": {
+   "page": "Switch",
+   "desc": "",
+   "count": 16,
+   "props": {
+    "Size": [
+     "Default",
+     "Small"
+    ],
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled",
+     "Focus"
+    ],
+    "Data state": [
+     "Checked",
+     "Unchecked"
+    ]
+   }
+  },
+  "Input group": {
+   "page": null,
+   "desc": "",
+   "count": 2,
+   "props": {
+    "State": [
+     "Active"
+    ],
+    "Text alignment": [
+     "Left",
+     "Right"
+    ]
+   }
+  },
+  "Content slot": {
+   "page": null,
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Content slot": [
+     "Input group control"
+    ],
+    "Flip content": [
+     "False",
+     "True"
+    ]
+   }
+  },
+  "HoverCard": {
+   "page": "Hover Card",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "InputOPT": {
+   "page": "Input OPT",
+   "desc": "",
+   "count": 12,
+   "props": {
+    "Position": [
+     "Left",
+     "Middle",
+     "Right"
+    ],
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled",
+     "Focus"
+    ]
+   }
+  },
+  "Item": {
+   "page": "Item",
+   "desc": "",
+   "count": 24,
+   "props": {
+    "Type": [
+     "Default",
+     "Muted",
+     "Outline"
+    ],
+    "State": [
+     "Default",
+     "Hover"
+    ],
+    "Size": [
+     "Default",
+     "Extra small"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "MenubarItem": {
+   "page": "Menubar",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "MenubarGroup": {
+   "page": "Menubar",
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Type": [
+     "Default"
+    ]
+   }
+  },
+  "Message footer": {
+   "page": "Message",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Type": [
+     "Actions",
+     "Text"
+    ]
+   }
+  },
+  "NativeSelect": {
+   "page": "Native Select",
+   "desc": "",
+   "count": 8,
+   "props": {
+    "State": [
+     "Default",
+     "Destructive",
+     "Disabled",
+     "Focus"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "NativeSelectLabel": {
+   "page": "Native Select",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Text alignment": [
+     "Left",
+     "Right"
+    ]
+   }
+  },
+  "NativeSelectOption": {
+   "page": "Native Select",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Text alignment": [
+     "Left",
+     "Right"
+    ]
+   }
+  },
+  "NavigationMenuItem": {
+   "page": "Navigation Menu",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "State": [
+     "Default",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Questionnaire choice": {
+   "page": "Questionnaire",
+   "desc": "",
+   "count": 6,
+   "props": {
+    "State": [
+     "Data checked",
+     "Default",
+     "Hover"
+    ],
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "Scrollbar": {
+   "page": "Scroll-area",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Orientation": [
+     "Horizontal",
+     "Orientation3",
+     "Vertical"
+    ]
+   }
+  },
+  "SheetHeader": {
+   "page": "Sheet",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Dir": [
+     "LTR",
+     "RTL"
+    ]
+   }
+  },
+  "LeadingVisual": {
+   "page": "Sidebar",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "Type": [
+     "Avatar",
+     "Icon"
+    ]
+   }
+  },
+  "SidebarHeader": {
+   "page": "Sidebar",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Collapsed": [
+     "False",
+     "True"
+    ],
+    "State": [
+     "Default",
+     "Hover"
+    ]
+   }
+  },
+  "MenuButton": {
+   "page": "Sidebar",
+   "desc": "",
+   "count": 8,
+   "props": {
+    "Menu button": [
+     "False",
+     "True"
+    ],
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ]
+   }
+  },
+  "SidebarGroupLabel": {
+   "page": "Sidebar",
+   "desc": "",
+   "count": 2,
+   "props": {
+    "State": [
+     "Default",
+     "Focus"
+    ]
+   }
+  },
+  "SidebarMenuSubButton": {
+   "page": "Sidebar",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "State": [
+     "Default",
+     "Disabled",
+     "Focus",
+     "Hover"
+    ]
+   }
+  },
+  "Skeleton": {
+   "page": "Skeleton",
+   "desc": "",
+   "count": 3,
+   "props": {
+    "Skeleton": [
+     "Avatar",
+     "Card",
+     "Text"
+    ]
+   }
+  },
+  "Spinner": {
+   "page": "Spinner",
+   "desc": "",
+   "count": 4,
+   "props": {
+    "Size": [
+     "size-3",
+     "size-4",
+     "size-5",
+     "size-6"
+    ]
+   }
+  },
+  "Card content": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Type": [
+     "Paragraph"
+    ],
+    "Alignment": [
+     "Right"
+    ]
+   }
+  },
+  "Toggle": {
+   "page": "Toggle & Toggle Group",
+   "desc": "",
+   "count": 96,
+   "props": {
+    "Variant": [
+     "Ghost",
+     "Outline"
+    ],
+    "Size": [
+     "default",
+     "large",
+     "sm"
+    ],
+    "State": [
+     "Disabled",
+     "Focus",
+     "Off",
+     "On/Hover"
+    ],
+    "Position": [
+     "Left",
+     "Middle",
+     "Right",
+     "Single"
+    ]
+   }
+  },
+  "ToggleIcon": {
+   "page": "Toggle & Toggle Group",
+   "desc": "",
+   "count": 120,
+   "props": {
+    "Variant": [
+     "Ghost",
+     "Outline"
+    ],
+    "Size": [
+     "default",
+     "large",
+     "sm"
+    ],
+    "State": [
+     "Disabled",
+     "Focus",
+     "Off",
+     "On/Hover"
+    ],
+    "Position": [
+     "Bottom",
+     "Left",
+     "Right",
+     "Single",
+     "Top"
+    ]
+   }
+  },
+  "check": {
+   "page": null,
+   "desc": "",
+   "count": 1,
+   "props": {
+    "Type": [
+     "Outline"
+    ]
+   }
+  }
+ },
+ "looseComponents": [
+  "Alert Dialog",
+  "Be in the loop",
+  "Bubble reaction",
+  "Button group/Ghost/default/Default/Single/False/Rounded",
+  "Button group/Icon ghost/default/Default/Single/Default",
+  "Button group/Outline/default/Default/Left/False/Default",
+  "Button group/Outline/default/Default/Right/False/Default",
+  "Button/Default/default/Default/Default",
+  "Button/Outline/default/Default/Default",
+  "Card footer",
+  "ComboboxItem/Default/One/LTR",
+  "Day",
+  "Field label/Action/Default/False",
+  "ItemHeader",
+  "Kbd",
+  "Marker",
+  "Message header",
+  "SheetFooter",
+  "Table cell/Checkbox/Left",
+  "Table head/LTR/Button",
+  "Table head/LTR/Checkbox",
+  "Toast",
+  "coffee",
+  "lucide/app-window",
+  "lucide/archive-x",
+  "lucide/area-chart",
+  "lucide/arrow-down",
+  "lucide/arrow-down-up",
+  "lucide/arrow-left",
+  "lucide/arrow-right",
+  "lucide/arrow-up",
+  "lucide/arrow-up-left",
+  "lucide/arrow-up-right",
+  "lucide/at-sign",
+  "lucide/audio-lines",
+  "lucide/badge-check",
+  "lucide/badge-plus",
+  "lucide/bar-chart-big",
+  "lucide/bell",
+  "lucide/blocks",
+  "lucide/bluetooth",
+  "lucide/bold",
+  "lucide/book-open",
+  "lucide/book-open-check",
+  "lucide/bookmark",
+  "lucide/bot",
+  "lucide/building-2",
+  "lucide/calculator",
+  "lucide/calendar",
+  "lucide/check",
+  "lucide/chevron-down",
+  "lucide/chevron-left",
+  "lucide/chevron-right",
+  "lucide/chevron-up",
+  "lucide/chevrons-left",
+  "lucide/chevrons-right",
+  "lucide/chevrons-up-down",
+  "lucide/circle-alert",
+  "lucide/circle-check",
+  "lucide/circle-fading-plus",
+  "lucide/circle-help",
+  "lucide/circle-plus",
+  "lucide/clipboard-paste",
+  "lucide/clock",
+  "lucide/clock-2",
+  "lucide/cloud",
+  "lucide/code",
+  "lucide/columns-2",
+  "lucide/command",
+  "lucide/copy",
+  "lucide/corner-up-left",
+  "lucide/corner-up-right",
+  "lucide/credit-card",
+  "lucide/download",
+  "lucide/ellipsis",
+  "lucide/ellipsis-vertical",
+  "lucide/external-link",
+  "lucide/eye",
+  "lucide/eye-off",
+  "lucide/file",
+  "lucide/file-code",
+  "lucide/file-search",
+  "lucide/file-text",
+  "lucide/folder",
+  "lucide/folder-open",
+  "lucide/folder-x",
+  "lucide/footprints",
+  "lucide/frame",
+  "lucide/gallery-vertical-end",
+  "lucide/git-branch",
+  "lucide/globe",
+  "lucide/hexagon",
+  "lucide/home",
+  "lucide/image",
+  "lucide/inbox",
+  "lucide/info",
+  "lucide/italic",
+  "lucide/keyboard",
+  "lucide/layout-grid",
+  "lucide/life-buoy",
+  "lucide/line-chart",
+  "lucide/link",
+  "lucide/list",
+  "lucide/loader",
+  "lucide/loader-circle",
+  "lucide/lock",
+  "lucide/log-out",
+  "lucide/mail",
+  "lucide/map",
+  "lucide/maximize",
+  "lucide/menu",
+  "lucide/message-circle",
+  "lucide/message-circle-dashed",
+  "lucide/message-circle-question",
+  "lucide/message-square",
+  "lucide/minus",
+  "lucide/mouse-pointer-2",
+  "lucide/octagon-x",
+  "lucide/paintbrush",
+  "lucide/palette",
+  "lucide/panel-left",
+  "lucide/panels-top-left",
+  "lucide/paperclip",
+  "lucide/pen",
+  "lucide/pencil",
+  "lucide/pie-chart",
+  "lucide/plus",
+  "lucide/radar",
+  "lucide/refresh-cw",
+  "lucide/rotate-ccw",
+  "lucide/rotate-cw",
+  "lucide/save",
+  "lucide/scissors",
+  "lucide/search",
+  "lucide/send",
+  "lucide/settings",
+  "lucide/settings-2",
+  "lucide/share",
+  "lucide/shield-alert",
+  "lucide/smile",
+  "lucide/sparkles",
+  "lucide/star",
+  "lucide/table",
+  "lucide/terminal",
+  "lucide/thumbs-down",
+  "lucide/thumbs-up",
+  "lucide/trash",
+  "lucide/trash-2",
+  "lucide/trending-down",
+  "lucide/trending-up",
+  "lucide/triangle-alert",
+  "lucide/underline",
+  "lucide/user",
+  "lucide/user-round",
+  "lucide/user-round-x",
+  "lucide/video",
+  "lucide/volume-off",
+  "lucide/wallet",
+  "lucide/x",
+  "lucide/zoom-in",
+  "lucide/zoom-out",
+  "remix/apple",
+  "remix/github",
+  "remix/google",
+  "remix/meta",
+  "tabler/brand-javascript",
+  "tabler/chart-bar-popular",
+  "tabler/circle-check",
+  "tabler/corner-down-left",
+  "tabler/dashboard",
+  "tabler/database",
+  "tabler/file-word",
+  "tabler/folder",
+  "tabler/folder-code",
+  "tabler/git-branch",
+  "tabler/grip-vertical",
+  "tabler/inner-shadow-top",
+  "tabler/list-details",
+  "tabler/report",
+  "tabler/users"
+ ]
+}

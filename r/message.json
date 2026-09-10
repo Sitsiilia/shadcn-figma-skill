@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "message",
+  "type": "registry:ui",
+  "dependencies": [],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/message.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Message — the transcript row that wraps a Bubble.\n *\n *   <MessageGroup>                     stacks consecutive messages, one sender\n *     <Message align=\"end\">\n *       <MessageAvatar>…</MessageAvatar>\n *       <MessageHeader>Ada</MessageHeader>\n *       <Bubble …>…</Bubble>\n *       <MessageFooter>Read 12:04</MessageFooter>\n *     </Message>\n *   </MessageGroup>\n *\n * `align=\"end\"` puts the avatar and content on the end side. Inside a\n * MessageGroup, render an empty MessageAvatar on the earlier messages so they\n * stay aligned with the avatar on the last one.\n */\nfunction Message({\n  className,\n  align = \"start\",\n  ...props\n}: React.ComponentProps<\"div\"> & { align?: \"start\" | \"end\" }) {\n  return (\n    <div\n      data-slot=\"message\"\n      data-align={align}\n      className={cn(\n        \"flex w-full items-end gap-2\",\n        align === \"end\" ? \"flex-row-reverse\" : \"flex-row\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\n/** Stacks consecutive messages from the same sender. */\nfunction MessageGroup({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div data-slot=\"message-group\" className={cn(\"flex flex-col gap-1\", className)} {...props} />\n  );\n}\n\n/** Render it empty to reserve the gutter on earlier messages in a group. */\nfunction MessageAvatar({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"message-avatar\"\n      className={cn(\"size-8 shrink-0 self-end\", className)}\n      {...props}\n    />\n  );\n}\n\n/** The sender name. */\nfunction MessageHeader({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"message-header\"\n      className={cn(\"flex items-center gap-2 px-3 text-xs font-medium text-muted-foreground\", className)}\n      {...props}\n    />\n  );\n}\n\n/** Metadata (delivery / read status) or message-level actions. */\nfunction MessageFooter({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"message-footer\"\n      className={cn(\n        \"flex min-h-6 items-center gap-2 px-3 text-xs font-medium text-muted-foreground\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Message, MessageGroup, MessageAvatar, MessageHeader, MessageFooter };\n",
+      "type": "registry:ui",
+      "target": "components/ui/message.tsx"
+    }
+  ]
+}

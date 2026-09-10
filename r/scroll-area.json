@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-area",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-scroll-area"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/scroll-area.tsx",
+      "content": "import * as React from \"react\";\nimport * as ScrollAreaPrimitive from \"@radix-ui/react-scroll-area\";\n\nimport { cn } from \"@/lib/utils\";\n\n/** figma: Scrollbar — Orientation = Vertical | Horizontal. */\nfunction ScrollArea({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof ScrollAreaPrimitive.Root>) {\n  return (\n    <ScrollAreaPrimitive.Root\n      data-slot=\"scroll-area\"\n      className={cn(\"relative\", className)}\n      {...props}\n    >\n      <ScrollAreaPrimitive.Viewport\n        data-slot=\"scroll-area-viewport\"\n        className={cn(\n          \"size-full rounded-[inherit] transition-[color,box-shadow] outline-none\",\n          \"focus-visible:ring-ring-subtle focus-visible:ring-[3px]\"\n        )}\n      >\n        {children}\n      </ScrollAreaPrimitive.Viewport>\n      <ScrollBar />\n      <ScrollAreaPrimitive.Corner />\n    </ScrollAreaPrimitive.Root>\n  );\n}\n\nfunction ScrollBar({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>) {\n  return (\n    <ScrollAreaPrimitive.ScrollAreaScrollbar\n      data-slot=\"scroll-area-scrollbar\"\n      orientation={orientation}\n      className={cn(\n        \"flex touch-none p-px transition-colors select-none\",\n        orientation === \"vertical\" && \"h-full w-2.5 border-s border-s-transparent\",\n        orientation === \"horizontal\" && \"h-2.5 flex-col border-t border-t-transparent\",\n        className\n      )}\n      {...props}\n    >\n      <ScrollAreaPrimitive.ScrollAreaThumb\n        data-slot=\"scroll-area-thumb\"\n        className=\"relative flex-1 rounded-full bg-border\"\n      />\n    </ScrollAreaPrimitive.ScrollAreaScrollbar>\n  );\n}\n\nexport { ScrollArea, ScrollBar };\n",
+      "type": "registry:ui",
+      "target": "components/ui/scroll-area.tsx"
+    }
+  ]
+}

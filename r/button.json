@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "button",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-focus.json",
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/button.tsx",
+      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\nimport { controlIcon, disabled, focusRing, inlineIcon } from \"@/lib/focus\";\n\n/**\n * figma: Button — 192 variants (Variant x Size x State x Roudness).\n *\n * Measured geometry:\n *   xs       h 24  px 8   gap 4  rounded-sm  text-xs/500\n *   sm       h 28  px 10  gap 4  rounded-sm  text-xs/500\n *   default  h 32  px 10  gap 4  rounded-lg  text-sm/500\n *   lg       h 36  px 10  gap 4  rounded-lg  text-sm/500\n *\n * One step smaller than upstream shadcn, whose default is h-9.\n *\n * The Figma `Roudness` axis is not a prop — the docs say\n * \"Use the rounded-full class to make the button rounded\", so it is applied\n * with `className=\"rounded-full\"`.\n *\n * Icons carry data-icon=\"inline-start\" | \"inline-end\" for correct spacing.\n */\nconst buttonVariants = cva(\n  cn(\n    \"inline-flex shrink-0 items-center justify-center gap-1 whitespace-nowrap font-medium transition-all\",\n    controlIcon,\n    inlineIcon,\n    focusRing,\n    disabled,\n    \"aria-invalid:border-destructive aria-invalid:ring-ring-destructive aria-invalid:ring-[3px]\"\n  ),\n  {\n    variants: {\n      variant: {\n        default: \"bg-primary text-primary-foreground shadow-xs hover:bg-primary/90\",\n        destructive:\n          \"bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-ring-destructive\",\n        outline: \"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground\",\n        secondary: \"bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80\",\n        ghost: \"hover:bg-accent hover:text-accent-foreground\",\n        link: \"text-primary underline-offset-4 hover:underline\",\n      },\n      size: {\n        xs: \"h-6 rounded-sm px-2 text-xs\",\n        sm: \"h-7 rounded-sm px-2.5 text-xs\",\n        default: \"h-8 rounded-lg px-2.5 text-sm\",\n        lg: \"h-9 rounded-lg px-2.5 text-sm\",\n      },\n    },\n    compoundVariants: [{ variant: \"link\", className: \"px-0 shadow-none\" }],\n    defaultVariants: { variant: \"default\", size: \"default\" },\n  }\n);\n\nexport interface ButtonProps\n  extends React.ComponentProps<\"button\">,\n    VariantProps<typeof buttonVariants> {\n  asChild?: boolean;\n}\n\nfunction Button({ className, variant, size, asChild = false, ...props }: ButtonProps) {\n  const Comp = asChild ? Slot : \"button\";\n  return (\n    <Comp\n      data-slot=\"button\"\n      className={cn(buttonVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { Button, buttonVariants };\n",
+      "type": "registry:ui",
+      "target": "components/ui/button.tsx"
+    }
+  ]
+}

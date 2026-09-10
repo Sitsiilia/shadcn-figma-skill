@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-aspect-ratio"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "ui/aspect-ratio.tsx",
+      "content": "import * as React from \"react\";\nimport * as AspectRatioPrimitive from \"@radix-ui/react-aspect-ratio\";\n\n/** figma: Aspect Ratio page — a pass-through layout primitive, no visual tokens. */\nfunction AspectRatio({ ...props }: React.ComponentProps<typeof AspectRatioPrimitive.Root>) {\n  return <AspectRatioPrimitive.Root data-slot=\"aspect-ratio\" {...props} />;\n}\n\nexport { AspectRatio };\n",
+      "type": "registry:ui",
+      "target": "components/ui/aspect-ratio.tsx"
+    }
+  ]
+}

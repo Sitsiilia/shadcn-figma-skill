@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "input",
+  "type": "registry:ui",
+  "dependencies": [],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/input.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Input — 32 variants\n *   State     Default | Focus/Active | Destructive | Disabled\n *   Text      Placeholder | Active        (content, not an API)\n *   Dir       LTR | RTL                   (handled by `dir` on an ancestor)\n *   Roudness  Default | Rounded\n *\n * Geometry: h 32, px 10, py 4, radius-lg, 1px border.\n * Disabled fill is `input/50` (#e5e5e580) rather than plain opacity.\n *\n * The Figma `Roudness` axis is applied with `className=\"rounded-full\"`, the\n * same way the Button docs describe it.\n */\nfunction Input({ className, type, ...props }: React.ComponentProps<\"input\">) {\n  return (\n    <input\n      type={type}\n      data-slot=\"input\"\n      className={cn(\n    \"flex h-8 w-full min-w-0 bg-background px-2.5 py-1 text-sm shadow-xs transition-[color,box-shadow]\",\n    \"border border-input outline-none\",\n    \"placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground\",\n    \"file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground\",\n    \"focus-visible:border-ring focus-visible:ring-ring-subtle focus-visible:ring-[3px]\",\n    \"aria-invalid:border-destructive aria-invalid:ring-ring-destructive aria-invalid:ring-[3px]\",\n        \"rounded-lg\",\n        \"disabled:pointer-events-none disabled:cursor-not-allowed disabled:bg-input/50\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nexport { Input };\n",
+      "type": "registry:ui",
+      "target": "components/ui/input.tsx"
+    }
+  ]
+}

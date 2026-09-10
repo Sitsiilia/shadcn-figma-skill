@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-group",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-toggle-group",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/toggle.json",
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/toggle-group.tsx",
+      "content": "import * as React from \"react\";\nimport * as ToggleGroupPrimitive from \"@radix-ui/react-toggle-group\";\nimport type { VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\nimport { toggleVariants } from \"./toggle\";\n\n/** Shares variant + size down to the items, mirroring how the Figma set nests. */\nconst ToggleGroupContext = React.createContext<VariantProps<typeof toggleVariants>>({\n  size: \"default\",\n  variant: \"default\",\n});\n\nfunction ToggleGroup({\n  className,\n  variant,\n  size,\n  children,\n  ...props\n}: React.ComponentProps<typeof ToggleGroupPrimitive.Root> &\n  VariantProps<typeof toggleVariants>) {\n  return (\n    <ToggleGroupPrimitive.Root\n      data-slot=\"toggle-group\"\n      data-variant={variant}\n      data-size={size}\n      className={cn(\n        \"group/toggle-group flex w-fit items-center\",\n        \"data-[variant=outline]:shadow-xs\",\n        \"data-[orientation=horizontal]:flex-row data-[orientation=vertical]:flex-col\",\n        className\n      )}\n      {...props}\n    >\n      <ToggleGroupContext.Provider value={{ variant, size }}>\n        {children}\n      </ToggleGroupContext.Provider>\n    </ToggleGroupPrimitive.Root>\n  );\n}\n\nfunction ToggleGroupItem({\n  className,\n  children,\n  variant,\n  size,\n  ...props\n}: React.ComponentProps<typeof ToggleGroupPrimitive.Item> &\n  VariantProps<typeof toggleVariants>) {\n  const context = React.useContext(ToggleGroupContext);\n  const resolvedVariant = context.variant ?? variant;\n  const resolvedSize = context.size ?? size;\n\n  return (\n    <ToggleGroupPrimitive.Item\n      data-slot=\"toggle-group-item\"\n      data-variant={resolvedVariant}\n      data-size={resolvedSize}\n      className={cn(\n        toggleVariants({ variant: resolvedVariant, size: resolvedSize }),\n        \"min-w-0 shrink-0 shadow-none focus:z-10 focus-visible:z-10\",\n        // figma Position=Left | Middle | Right\n        \"group-data-[orientation=horizontal]/toggle-group:not-first:rounded-s-none\",\n        \"group-data-[orientation=horizontal]/toggle-group:not-last:rounded-e-none\",\n        \"group-data-[orientation=horizontal]/toggle-group:not-first:-ms-px\",\n        // figma Position=Top | Bottom\n        \"group-data-[orientation=vertical]/toggle-group:not-first:rounded-t-none\",\n        \"group-data-[orientation=vertical]/toggle-group:not-last:rounded-b-none\",\n        \"group-data-[orientation=vertical]/toggle-group:not-first:-mt-px\",\n        className\n      )}\n      {...props}\n    >\n      {children}\n    </ToggleGroupPrimitive.Item>\n  );\n}\n\nexport { ToggleGroup, ToggleGroupItem };\n",
+      "type": "registry:ui",
+      "target": "components/ui/toggle-group.tsx"
+    }
+  ]
+}

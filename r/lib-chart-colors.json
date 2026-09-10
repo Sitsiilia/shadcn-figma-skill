@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lib-chart-colors",
+  "type": "registry:lib",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "lib/chart-colors.ts",
+      "content": "/**\n * Chart palette.\n *\n * figma: `chart-1..5` in the `mode` collection are aliases onto the Radix\n * `blue` scale, steps 8 → 12 (rdx/colors collection). That is a sequential\n * ramp, not a categorical one: use it in order for ordered series, and reach\n * for `radixScales` below when you need categorically distinct series.\n */\nexport const chartColors = [\n  \"var(--chart-1)\",\n  \"var(--chart-2)\",\n  \"var(--chart-3)\",\n  \"var(--chart-4)\",\n  \"var(--chart-5)\",\n] as const;\n\n/** Light-mode hexes, for exports that cannot resolve CSS variables. */\nexport const chartColorsLight = [\"#5eb1ef\", \"#0090ff\", \"#0588f0\", \"#0d74ce\", \"#113264\"] as const;\n/** Radix `blueDark` steps 8 → 12. */\nexport const chartColorsDark = [\"#2870bd\", \"#0090ff\", \"#3b9eff\", \"#70b8ff\", \"#c2e6ff\"] as const;\n\nexport function chartColor(index: number) {\n  return chartColors[index % chartColors.length];\n}\n",
+      "type": "registry:lib",
+      "target": "lib/chart-colors.ts"
+    }
+  ]
+}

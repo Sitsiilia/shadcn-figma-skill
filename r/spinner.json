@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner",
+  "type": "registry:ui",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/spinner.tsx",
+      "content": "import * as React from \"react\";\nimport { Loader2Icon } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Spinner — Size = size-3 | size-4 | size-5 | size-6.\n *\n * Those Figma variants are Tailwind utilities, and the docs say\n * \"Use the size-* utility class to change the size of the spinner\", so size is\n * a class rather than a prop: `<Spinner className=\"size-6\" />`.\n *\n * Inside a Button or Badge, add data-icon=\"inline-start\" | \"inline-end\".\n */\nfunction Spinner({ className, ...props }: React.ComponentProps<\"svg\">) {\n  return (\n    <Loader2Icon\n      role=\"status\"\n      aria-label=\"Loading\"\n      data-slot=\"spinner\"\n      className={cn(\"size-4 shrink-0 animate-spin\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Spinner };\n",
+      "type": "registry:ui",
+      "target": "components/ui/spinner.tsx"
+    }
+  ]
+}

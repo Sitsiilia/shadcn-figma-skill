@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-progress"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/progress.tsx",
+      "content": "import * as React from \"react\";\nimport * as ProgressPrimitive from \"@radix-ui/react-progress\";\n\nimport { cn } from \"@/lib/utils\";\n\n/** figma: Progress — 8px track in `muted`, radius-full, indicator in `primary`. */\nfunction Progress({\n  className,\n  value,\n  ...props\n}: React.ComponentProps<typeof ProgressPrimitive.Root>) {\n  return (\n    <ProgressPrimitive.Root\n      data-slot=\"progress\"\n      className={cn(\"relative h-2 w-full overflow-hidden rounded-full bg-muted\", className)}\n      {...props}\n    >\n      <ProgressPrimitive.Indicator\n        data-slot=\"progress-indicator\"\n        className=\"h-full w-full flex-1 bg-primary transition-all\"\n        style={{ transform: `translateX(-${100 - (value || 0)}%)` }}\n      />\n    </ProgressPrimitive.Root>\n  );\n}\n\nexport { Progress };\n",
+      "type": "registry:ui",
+      "target": "components/ui/progress.tsx"
+    }
+  ]
+}

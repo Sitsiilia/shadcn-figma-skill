@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-button",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-focus.json",
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/icon-button.tsx",
+      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\nimport { controlIcon, disabled, focusRing } from \"@/lib/focus\";\n\n/**\n * figma: Icon Button — 160 variants. Same axes as Button minus `Link`, square\n * at every size (24 / 28 / 32 / 36). A separate component set in Figma, so a\n * separate component here — not `size=\"icon\"` on Button.\n *\n * Use `className=\"rounded-full\"` for the pill treatment.\n * Always give it an accessible name.\n */\nconst iconButtonVariants = cva(\n  cn(\n    \"inline-flex shrink-0 items-center justify-center transition-all\",\n    controlIcon,\n    focusRing,\n    disabled\n  ),\n  {\n    variants: {\n      variant: {\n        default: \"bg-primary text-primary-foreground shadow-xs hover:bg-primary/90\",\n        destructive:\n          \"bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-ring-destructive\",\n        outline: \"border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground\",\n        secondary: \"bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80\",\n        ghost: \"hover:bg-accent hover:text-accent-foreground\",\n      },\n      size: {\n        xs: \"size-6 rounded-sm [&_svg:not([class*='size-'])]:size-3\",\n        sm: \"size-7 rounded-sm [&_svg:not([class*='size-'])]:size-3.5\",\n        default: \"size-8 rounded-lg\",\n        lg: \"size-9 rounded-lg\",\n      },\n    },\n    defaultVariants: { variant: \"default\", size: \"default\" },\n  }\n);\n\nexport interface IconButtonProps\n  extends React.ComponentProps<\"button\">,\n    VariantProps<typeof iconButtonVariants> {\n  asChild?: boolean;\n}\n\nfunction IconButton({ className, variant, size, asChild = false, ...props }: IconButtonProps) {\n  const Comp = asChild ? Slot : \"button\";\n  return (\n    <Comp\n      data-slot=\"icon-button\"\n      className={cn(iconButtonVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { IconButton, iconButtonVariants };\n",
+      "type": "registry:ui",
+      "target": "components/ui/icon-button.tsx"
+    }
+  ]
+}

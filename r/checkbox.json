@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "checkbox",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-checkbox",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/checkbox.tsx",
+      "content": "import * as React from \"react\";\nimport * as CheckboxPrimitive from \"@radix-ui/react-checkbox\";\nimport { CheckIcon, MinusIcon } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Checkbox — Interaction = Default | Focus | Disabled | Invalid,\n * Data state = Unchecked | Checked | Invalid-unchecked | Invalid-checked.\n * Box is 16x16, radius 4 (radius-xs), 1px border; checked fills with `primary`.\n */\nfunction Checkbox({ className, ...props }: React.ComponentProps<typeof CheckboxPrimitive.Root>) {\n  return (\n    <CheckboxPrimitive.Root\n      data-slot=\"checkbox\"\n      className={cn(\n        \"group peer size-4 shrink-0 rounded-xs border border-input bg-background shadow-xs\",\n        \"transition-shadow outline-none\",\n        \"data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground\",\n        \"data-[state=indeterminate]:border-primary data-[state=indeterminate]:bg-primary data-[state=indeterminate]:text-primary-foreground\",\n        \"focus-visible:border-ring focus-visible:ring-ring-subtle focus-visible:ring-[3px]\",\n        \"aria-invalid:border-destructive aria-invalid:ring-ring-destructive aria-invalid:ring-[3px]\",\n        \"disabled:cursor-not-allowed disabled:opacity-50\",\n        className\n      )}\n      {...props}\n    >\n      <CheckboxPrimitive.Indicator\n        data-slot=\"checkbox-indicator\"\n        className=\"flex items-center justify-center text-current transition-none\"\n      >\n        <CheckIcon className=\"size-3.5 group-data-[state=indeterminate]:hidden\" />\n        <MinusIcon className=\"hidden size-3.5 group-data-[state=indeterminate]:block\" />\n      </CheckboxPrimitive.Indicator>\n    </CheckboxPrimitive.Root>\n  );\n}\n\nexport { Checkbox };\n",
+      "type": "registry:ui",
+      "target": "components/ui/checkbox.tsx"
+    }
+  ]
+}

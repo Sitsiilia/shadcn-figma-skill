@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "marker",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/marker.tsx",
+      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Marker — a status or divider row inside a conversation.\n *\n *   variant=\"inline\"     the default marker row\n *   variant=\"border\"     keeps marker alignment but separates the next row\n *   variant=\"separator\"  a labelled divider, e.g. a date or section break\n *\n * Recipes:\n *   - Status:  set role=\"status\" and include a <Spinner /> so in-progress\n *              updates are announced.\n *   - Shimmer: add the `shimmer` utility class to MarkerContent for the\n *              streaming-text effect (ships with the shadcn package).\n *   - asChild on Marker turns it into a link or button.\n */\nconst markerVariants = cva(\n  \"flex items-center gap-2 text-xs font-medium text-muted-foreground [&_svg:not([class*='size-'])]:size-3.5\",\n  {\n    variants: {\n      variant: {\n        inline: \"w-fit\",\n        border: \"w-full border-b pb-2\",\n        separator:\n          \"w-full before:h-px before:flex-1 before:bg-border after:h-px after:flex-1 after:bg-border\",\n      },\n    },\n    defaultVariants: { variant: \"inline\" },\n  }\n);\n\nfunction Marker({\n  className,\n  variant,\n  asChild = false,\n  ...props\n}: React.ComponentProps<\"div\"> & VariantProps<typeof markerVariants> & { asChild?: boolean }) {\n  const Comp = asChild ? Slot : \"div\";\n  return (\n    <Comp\n      data-slot=\"marker\"\n      data-variant={variant}\n      className={cn(markerVariants({ variant }), className)}\n      {...props}\n    />\n  );\n}\n\n/** The marker's text. Add the `shimmer` class for streaming content. */\nfunction MarkerContent({ className, ...props }: React.ComponentProps<\"span\">) {\n  return <span data-slot=\"marker-content\" className={cn(\"min-w-0\", className)} {...props} />;\n}\n\n/** An icon beside the content. Use `flex-col` on Marker to stack it above. */\nfunction MarkerIcon({ className, ...props }: React.ComponentProps<\"span\">) {\n  return (\n    <span\n      data-slot=\"marker-icon\"\n      className={cn(\"flex shrink-0 items-center justify-center [&_svg]:pointer-events-none\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Marker, MarkerContent, MarkerIcon, markerVariants };\n",
+      "type": "registry:ui",
+      "target": "components/ui/marker.tsx"
+    }
+  ]
+}

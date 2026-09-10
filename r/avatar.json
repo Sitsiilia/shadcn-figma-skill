@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-avatar",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/avatar.tsx",
+      "content": "import * as React from \"react\";\nimport * as AvatarPrimitive from \"@radix-ui/react-avatar\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Avatar (Size = sm 24 | default 32 | lg 40), AvatarBadge\n * (Type = Icon | Status, Size = xs 8 | default 10 | lg 12) and AvatarGroup\n * (Dir = LTR | RTL, -8px overlap).\n */\nconst avatarVariants = cva(\"relative flex shrink-0 overflow-hidden rounded-full\", {\n  variants: {\n    size: { sm: \"size-6\", default: \"size-8\", lg: \"size-10\" },\n  },\n  defaultVariants: { size: \"default\" },\n});\n\nfunction Avatar({\n  className,\n  size,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Root> & VariantProps<typeof avatarVariants>) {\n  return (\n    <AvatarPrimitive.Root\n      data-slot=\"avatar\"\n      className={cn(avatarVariants({ size }), className)}\n      {...props}\n    />\n  );\n}\n\nfunction AvatarImage({ className, ...props }: React.ComponentProps<typeof AvatarPrimitive.Image>) {\n  return (\n    <AvatarPrimitive.Image\n      data-slot=\"avatar-image\"\n      className={cn(\"aspect-square size-full object-cover\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction AvatarFallback({\n  className,\n  ...props\n}: React.ComponentProps<typeof AvatarPrimitive.Fallback>) {\n  return (\n    <AvatarPrimitive.Fallback\n      data-slot=\"avatar-fallback\"\n      className={cn(\n        \"flex size-full items-center justify-center rounded-full bg-muted text-xs font-medium\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nconst avatarBadgeVariants = cva(\n  \"absolute end-0 bottom-0 flex items-center justify-center rounded-full border-2 border-background\",\n  {\n    variants: {\n      variant: {\n        icon: \"bg-primary text-primary-foreground [&_svg]:size-2\",\n        status: \"bg-primary\",\n      },\n      size: { xs: \"size-2\", default: \"size-2.5\", lg: \"size-3\" },\n    },\n    defaultVariants: { variant: \"status\", size: \"default\" },\n  }\n);\n\nfunction AvatarBadge({\n  className,\n  variant,\n  size,\n  ...props\n}: React.ComponentProps<\"span\"> & VariantProps<typeof avatarBadgeVariants>) {\n  return (\n    <span\n      data-slot=\"avatar-badge\"\n      className={cn(avatarBadgeVariants({ variant, size }), className)}\n      {...props}\n    />\n  );\n}\n\n/** figma: AvatarGroup — a -8px overlapping stack with a ring in `background`. */\nfunction AvatarGroup({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"avatar-group\"\n      className={cn(\n        \"flex items-center -space-x-2 [&>[data-slot=avatar]]:ring-2 [&>[data-slot=avatar]]:ring-background\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\n/**\n * A trailing \"+N\" chip on an AvatarGroup. An icon can be used instead of a\n * count. Sized to match the group's avatars.\n */\nfunction AvatarGroupCount({\n  className,\n  size,\n  ...props\n}: React.ComponentProps<\"span\"> & VariantProps<typeof avatarVariants>) {\n  return (\n    <span\n      data-slot=\"avatar-group-count\"\n      className={cn(\n        avatarVariants({ size }),\n        \"items-center justify-center bg-muted text-xs font-medium text-muted-foreground\",\n        \"ring-2 ring-background [&_svg:not([class*='size-'])]:size-3.5\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nexport {\n  Avatar,\n  AvatarImage,\n  AvatarFallback,\n  AvatarBadge,\n  AvatarGroup,\n  AvatarGroupCount,\n  avatarVariants,\n};\n",
+      "type": "registry:ui",
+      "target": "components/ui/avatar.tsx"
+    }
+  ]
+}

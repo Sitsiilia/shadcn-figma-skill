@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "type": "registry:ui",
+  "dependencies": [],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/skeleton.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: Skeleton — Skeleton = Avatar (40x40, radius-full) | Text (h 16,\n * radius-md) | Card (h 125, radius-md). All fill `muted`.\n */\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"animate-pulse rounded-md bg-muted\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Skeleton };\n",
+      "type": "registry:ui",
+      "target": "components/ui/skeleton.tsx"
+    }
+  ]
+}

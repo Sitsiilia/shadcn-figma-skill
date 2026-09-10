@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "badge",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-slot",
+    "class-variance-authority"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-focus.json",
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/badge.tsx",
+      "content": "import * as React from \"react\";\nimport { Slot } from \"@radix-ui/react-slot\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\n\nimport { cn } from \"@/lib/utils\";\nimport { inlineIcon } from \"@/lib/focus\";\n\n/**\n * figma: Badge — State = Default | Secondary | Destructive | Outline | Ghost.\n * `Ghost` is an addition over upstream shadcn. Geometry: h 22, px 8, py 2,\n * gap 4, rounded-4xl (26 — a pill at this height).\n *\n * The destructive badge is *subtle*: `destructive-subtle` behind\n * `text-destructive`, not a solid red chip.\n *\n * Icons and spinners inside a badge take data-icon=\"inline-start\" |\n * \"inline-end\". Custom colours are applied with utility classes, e.g.\n * `className=\"bg-green-50 dark:bg-green-800\"`.\n */\nconst badgeVariants = cva(\n  cn(\n    \"inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden\",\n    \"rounded-4xl px-2 py-0.5 text-xs font-medium whitespace-nowrap transition-colors\",\n    \"[&>svg]:pointer-events-none [&>svg]:size-3\",\n    inlineIcon,\n    \"focus-visible:border-ring focus-visible:ring-ring-subtle focus-visible:ring-[3px]\"\n  ),\n  {\n    variants: {\n      variant: {\n        default: \"bg-primary text-primary-foreground [a&]:hover:bg-primary/90\",\n        secondary: \"bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90\",\n        destructive:\n          \"bg-destructive-subtle text-text-destructive [a&]:hover:bg-destructive-subtle/80\",\n        outline: \"border text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground\",\n        ghost: \"text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground\",\n      },\n    },\n    defaultVariants: { variant: \"default\" },\n  }\n);\n\nfunction Badge({\n  className,\n  variant,\n  asChild = false,\n  ...props\n}: React.ComponentProps<\"span\"> & VariantProps<typeof badgeVariants> & { asChild?: boolean }) {\n  const Comp = asChild ? Slot : \"span\";\n  return <Comp data-slot=\"badge\" className={cn(badgeVariants({ variant }), className)} {...props} />;\n}\n\nexport { Badge, badgeVariants };\n",
+      "type": "registry:ui",
+      "target": "components/ui/badge.tsx"
+    }
+  ]
+}

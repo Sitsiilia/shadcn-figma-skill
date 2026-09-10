@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-group",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-radio-group",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"
+  ],
+  "files": [
+    {
+      "path": "ui/radio-group.tsx",
+      "content": "import * as React from \"react\";\nimport * as RadioGroupPrimitive from \"@radix-ui/react-radio-group\";\nimport { CircleIcon } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/**\n * figma: RadioGroup (State = Default | Disabled | Invalid, Dir = LTR | RTL) and\n * Radio (Interaction x Data state, 10 combinations). Dot is 16x16, radius-full;\n * checked fills with `primary` and draws a `primary` border.\n */\nfunction RadioGroup({ className, ...props }: React.ComponentProps<typeof RadioGroupPrimitive.Root>) {\n  return (\n    <RadioGroupPrimitive.Root\n      data-slot=\"radio-group\"\n      className={cn(\"grid gap-3\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction RadioGroupItem({\n  className,\n  ...props\n}: React.ComponentProps<typeof RadioGroupPrimitive.Item>) {\n  return (\n    <RadioGroupPrimitive.Item\n      data-slot=\"radio-group-item\"\n      className={cn(\n        \"aspect-square size-4 shrink-0 rounded-full border border-input bg-background shadow-xs\",\n        \"transition-[color,box-shadow] outline-none\",\n        \"data-[state=checked]:border-primary data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground\",\n        \"focus-visible:border-ring focus-visible:ring-ring-subtle focus-visible:ring-[3px]\",\n        \"aria-invalid:border-destructive aria-invalid:ring-ring-destructive aria-invalid:ring-[3px]\",\n        \"disabled:cursor-not-allowed disabled:opacity-50\",\n        className\n      )}\n      {...props}\n    >\n      <RadioGroupPrimitive.Indicator\n        data-slot=\"radio-group-indicator\"\n        className=\"relative flex items-center justify-center\"\n      >\n        <CircleIcon className=\"absolute top-1/2 left-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 fill-current stroke-none\" />\n      </RadioGroupPrimitive.Indicator>\n    </RadioGroupPrimitive.Item>\n  );\n}\n\n/**\n * The library's docs refer to this part as `RadioItem` — e.g. the Field\n * \"Choice card\" recipe: \"This works with RadioItem, Checkbox and Switch\".\n */\nconst RadioItem = RadioGroupItem;\n\nexport { RadioGroup, RadioGroupItem, RadioItem };\n",
+      "type": "registry:ui",
+      "target": "components/ui/radio-group.tsx"
+    }
+  ]
+}
