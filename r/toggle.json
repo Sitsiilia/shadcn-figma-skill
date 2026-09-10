@@ -3,8 +3,8 @@
   "name": "toggle",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-toggle",
-    "class-variance-authority"
+    "@radix-ui/react-toggle@^1.1.9",
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-focus.json",

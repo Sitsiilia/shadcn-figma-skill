@@ -3,7 +3,7 @@
   "name": "slider",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-slider"
+    "@radix-ui/react-slider@^1.3.5"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

@@ -3,8 +3,8 @@
   "name": "input-otp",
   "type": "registry:ui",
   "dependencies": [
-    "input-otp",
-    "lucide-react"
+    "input-otp@^1.4.2",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

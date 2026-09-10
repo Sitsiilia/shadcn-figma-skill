@@ -3,7 +3,7 @@
   "name": "native-select",
   "type": "registry:ui",
   "dependencies": [
-    "lucide-react"
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

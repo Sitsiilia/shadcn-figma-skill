@@ -3,7 +3,7 @@
   "name": "alert",
   "type": "registry:ui",
   "dependencies": [
-    "class-variance-authority"
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

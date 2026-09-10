@@ -3,7 +3,7 @@
   "name": "sonner",
   "type": "registry:ui",
   "dependencies": [
-    "sonner"
+    "sonner@^2.0.8"
   ],
   "registryDependencies": [],
   "files": [

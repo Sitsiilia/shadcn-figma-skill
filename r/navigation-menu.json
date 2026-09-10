@@ -3,9 +3,9 @@
   "name": "navigation-menu",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-navigation-menu",
-    "class-variance-authority",
-    "lucide-react"
+    "@radix-ui/react-navigation-menu@^1.2.22",
+    "class-variance-authority@^0.7.1",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

@@ -3,7 +3,7 @@
   "name": "label",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-label"
+    "@radix-ui/react-label@^2.1.7"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

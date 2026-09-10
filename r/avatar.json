@@ -3,8 +3,8 @@
   "name": "avatar",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-avatar",
-    "class-variance-authority"
+    "@radix-ui/react-avatar@^1.1.10",
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

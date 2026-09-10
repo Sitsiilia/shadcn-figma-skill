@@ -3,8 +3,8 @@
   "name": "button",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-slot",
-    "class-variance-authority"
+    "@radix-ui/react-slot@^1.2.3",
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-focus.json",

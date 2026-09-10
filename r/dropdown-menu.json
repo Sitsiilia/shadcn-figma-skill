@@ -3,8 +3,8 @@
   "name": "dropdown-menu",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-dropdown-menu",
-    "lucide-react"
+    "@radix-ui/react-dropdown-menu@^2.1.15",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/_menu-styles.json",

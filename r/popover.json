@@ -3,7 +3,7 @@
   "name": "popover",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-popover"
+    "@radix-ui/react-popover@^1.1.14"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

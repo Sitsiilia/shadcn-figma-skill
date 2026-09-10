@@ -3,8 +3,8 @@
   "name": "data-table",
   "type": "registry:ui",
   "dependencies": [
-    "@tanstack/react-table",
-    "lucide-react"
+    "@tanstack/react-table@^8.21.3",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/button.json",

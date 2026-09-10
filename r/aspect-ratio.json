@@ -3,7 +3,7 @@
   "name": "aspect-ratio",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-aspect-ratio"
+    "@radix-ui/react-aspect-ratio@^1.1.15"
   ],
   "registryDependencies": [],
   "files": [

@@ -3,8 +3,8 @@
   "name": "tabs",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-tabs",
-    "class-variance-authority"
+    "@radix-ui/react-tabs@^1.1.12",
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

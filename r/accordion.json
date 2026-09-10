@@ -3,8 +3,8 @@
   "name": "accordion",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-accordion",
-    "lucide-react"
+    "@radix-ui/react-accordion@^1.2.11",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

@@ -3,7 +3,7 @@
   "name": "drawer",
   "type": "registry:ui",
   "dependencies": [
-    "vaul"
+    "vaul@^1.1.2"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

@@ -3,7 +3,7 @@
   "name": "chart",
   "type": "registry:ui",
   "dependencies": [
-    "recharts"
+    "recharts@^3.10.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

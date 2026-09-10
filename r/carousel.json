@@ -3,8 +3,8 @@
   "name": "carousel",
   "type": "registry:ui",
   "dependencies": [
-    "embla-carousel-react",
-    "lucide-react"
+    "embla-carousel-react@^8.6.0",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/icon-button.json",

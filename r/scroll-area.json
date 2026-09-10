@@ -3,7 +3,7 @@
   "name": "scroll-area",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-scroll-area"
+    "@radix-ui/react-scroll-area@^1.2.9"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

@@ -3,8 +3,8 @@
   "name": "breadcrumb",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-slot",
-    "lucide-react"
+    "@radix-ui/react-slot@^1.2.3",
+    "lucide-react@^0.544.0"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/lib-utils.json"

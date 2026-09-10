@@ -3,8 +3,8 @@
   "name": "toggle-group",
   "type": "registry:ui",
   "dependencies": [
-    "@radix-ui/react-toggle-group",
-    "class-variance-authority"
+    "@radix-ui/react-toggle-group@^1.1.10",
+    "class-variance-authority@^0.7.1"
   ],
   "registryDependencies": [
     "https://raw.githubusercontent.com/Sitsiilia/shadcn-figma-skill/refs/heads/main/r/toggle.json",
