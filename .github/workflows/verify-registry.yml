@@ -1,0 +1,26 @@
+name: Verify registry
+
+# The shadcn CLI ignores version ranges and installs `latest`, so a major
+# release of any dependency can break every new install without changing
+# anything here. This installs the whole registry into a clean project and
+# compiles it, weekly and on every push.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Mondays, 08:00 UTC
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install every component and compile it
+        run: node scripts/verify-registry.mjs r

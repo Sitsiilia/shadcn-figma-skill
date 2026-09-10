@@ -61,3 +61,19 @@ scripts/find.mjs      the lookup
 - **Support** — [ko-fi.com/sitsiilia](https://ko-fi.com/sitsiilia)
 
 By [@sitsiilia](https://x.com/sitsiilia).
+
+## Keeping this working
+
+The shadcn CLI installs `latest` for a component's dependencies and ignores
+version ranges. That means a major release of Radix, Lucide or anything else
+can break new installs without a single change here.
+
+[`scripts/verify-registry.mjs`](scripts/verify-registry.mjs) guards against it:
+it installs all 63 components into a throwaway project and compiles them.
+
+```bash
+node scripts/verify-registry.mjs r
+```
+
+CI runs it on every push and every Monday, so a breaking upstream release shows
+up as a failed check rather than a bug report.
